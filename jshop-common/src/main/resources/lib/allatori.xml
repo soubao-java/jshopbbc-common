@@ -1,0 +1,16 @@
+<config>
+    <input>
+        <jar in="../../jshop-1.0.jar" out="../../jshop-1.0-allatori.jar"/>
+    </input>
+    <ignore-classes>
+        <class template="class com.soubao.common.vo*" />
+        <class template="class com.soubao.common.constant*" />
+    </ignore-classes>
+    <keep-names>
+        <class access="protected+">
+            <field access="protected+"/>
+            <method access="protected+"/>
+        </class>
+    </keep-names>
+    <property name="log-file" value="log.xml"/>
+</config>
