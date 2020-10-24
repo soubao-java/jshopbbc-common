@@ -3,8 +3,8 @@
         <jar in="../../jshop-1.0.jar" out="../../jshop-1.0-allatori.jar"/>
     </input>
     <ignore-classes>
-        <class template="class com.soubao.common.vo*" />
-        <class template="class com.soubao.common.constant*" />
+        <class template="class org.soubao.starter.vo*" />
+        <class template="class org.soubao.starter.constant*" />
     </ignore-classes>
     <keep-names>
         <class access="protected+">
