@@ -10,6 +10,7 @@ public class SendCodeMap {
     private static final Map<String, String> successfully;
     private static final Map<String, String> complaint;
     private static final Map<String, String> userlog;
+    private static final Map<String, String> trialGoods;
 
     static {
         userlog = new HashMap<>();
@@ -17,6 +18,7 @@ public class SendCodeMap {
         successfully = new HashMap<>();
         orderSendCode = new HashMap<>();
         shippingSendCode = new HashMap<>();
+        trialGoods =new HashMap<>();
         orderSendCode.put("{$order_no}", "订单编号");
         shippingSendCode.put("{$delivery_no}", "物流编号");
         shippingSendCode.put("{$delivery_name}", "物流名称");
@@ -31,14 +33,13 @@ public class SendCodeMap {
         sendCode.put("customer_seller", complaint);
         userlog.put("{$username}", "会员昵称");
         sendCode.put("user_registration", userlog);
+        trialGoods.put("{$user_name}","会员昵称");
+        trialGoods.put("{$goods_name}","商品名称");
+        sendCode.put("trial_goods_win",trialGoods);
     }
 
     public static Map<String, String> getSendCodeMap(String code) {
         return sendCode.get(code);
     }
-
-
-
-
 
 }
