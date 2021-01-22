@@ -28,6 +28,8 @@ public class OrderConstant {
         thirdPayCode.add("weixin");
         thirdPayCode.add("miniAppPay");
         thirdPayCode.add("appWeixinPay");
+        thirdPayCode.add("paypal");
+        thirdPayCode.add("stripe");
     }
 
     public static Set<String> getThirdPayCode() {

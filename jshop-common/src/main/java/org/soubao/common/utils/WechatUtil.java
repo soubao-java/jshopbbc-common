@@ -165,8 +165,8 @@ public class WechatUtil {
             // 创建http GET请求
             HttpGet httpGet = new HttpGet(uri);
             RequestConfig requestConfig = RequestConfig.custom()
-                    .setConnectTimeout(2000).setConnectionRequestTimeout(2000)
-                    .setSocketTimeout(2000).build();
+                    .setConnectTimeout(60000).setConnectionRequestTimeout(60000)
+                    .setSocketTimeout(60000).build();
             httpGet.setConfig(requestConfig);
             // 执行请求
             response = httpclient.execute(httpGet);
